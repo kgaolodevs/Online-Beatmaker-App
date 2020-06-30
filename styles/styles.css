@@ -14,30 +14,149 @@ svg {
   pointer-events: none;
 }
 
-.app .pad {
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+}
+
+.app__sequencer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  min-width: 80vw;
+}
+
+.app__sequencer .pad {
   width: 5rem;
   height: 5rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
+  border-radius: 0.4rem;
 }
 
-.app__sequencer--kickPad .kickpad {
+.app__sequencer .track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5rem;
+  min-width: 100%;
+}
+
+.app__sequencer .track .app__sequencer--controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+}
+
+.app__sequencer--kickTrack .app__sequencer--kickPads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__sequencer--kickTrack .app__sequencer--kickPads .kickpad {
   background: #344055;
 }
 
-.app__sequencer--snarePad .snarepad {
+.app__sequencer--snareTrack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__sequencer--snareTrack .app__sequencer--snarePads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__sequencer--snareTrack .app__sequencer--snarePads .snarepad {
   background: #50c9ce;
 }
 
-.app__sequencer--hihatPad .hihatpad {
+.app__sequencer--hihatTrack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__sequencer--hihatTrack .app__sequencer--hihatPads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__sequencer--hihatTrack .app__sequencer--hihatPads .hihatpad {
   background: #72a1e5;
 }
 
-.app__sequencer--percPad .percpad {
+.app__sequencer--percTrack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__sequencer--percTrack .app__sequencer--percPads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__sequencer--percTrack .app__sequencer--percPads .percpad {
   background: #ffc8fb;
 }
 
-.app__sequencer--shakerPad .shakerpad {
+.app__sequencer--shakerTrack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__sequencer--shakerTrack .app__sequencer--shakerPads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app__sequencer--shakerTrack .app__sequencer--shakerPads .shakerpad {
   background: #ead2ac;
 }
 /*# sourceMappingURL=styles.css.map */

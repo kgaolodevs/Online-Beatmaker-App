@@ -14,36 +14,100 @@ svg {
 }
 
 .app {
-  .pad {
-    width: 5rem;
-    height: 5rem;
-    margin: 1rem 0.5rem;
-    cursor: pointer;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
 
-  &__sequencer--kickPad {
-    .kickpad {
-      background: #344055;
+  &__sequencer {
+    // outline: crimson 0.2rem solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 80vw;
+    .pad {
+      width: 5rem;
+      height: 5rem;
+      margin: 1rem 0.5rem;
+      cursor: pointer;
+      border-radius: 0.4rem;
     }
-  }
-  &__sequencer--snarePad {
-    .snarepad {
-      background: #50c9ce;
+
+    .track {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5rem;
+      min-width: 100%;
+
+      .app__sequencer--controls {
+        // outline: crimson 0.2rem solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0.8;
+      }
     }
-  }
-  &__sequencer--hihatPad {
-    .hihatpad {
-      background: #72a1e5;
+
+    &--kickTrack {
+      .app__sequencer--kickPads {
+        display: flex;
+
+        .kickpad {
+          background: #344055;
+        }
+      }
     }
-  }
-  &__sequencer--percPad {
-    .percpad {
-      background: #ffc8fb;
+
+    &--snareTrack {
+      display: flex;
+
+      .app__sequencer--snarePads {
+        display: flex;
+
+        .snarepad {
+          background: #50c9ce;
+        }
+      }
     }
-  }
-  &__sequencer--shakerPad {
-    .shakerpad {
-      background: #ead2ac;
+
+    &--hihatTrack {
+      display: flex;
+
+      .app__sequencer--hihatPads {
+        display: flex;
+
+        .hihatpad {
+          background: #72a1e5;
+        }
+      }
+    }
+
+    &--percTrack {
+      display: flex;
+
+      .app__sequencer--percPads {
+        display: flex;
+
+        .percpad {
+          background: #ffc8fb;
+        }
+      }
+    }
+
+    &--shakerTrack {
+      display: flex;
+
+      .app__sequencer--shakerPads {
+        display: flex;
+
+        .shakerpad {
+          background: #ead2ac;
+        }
+      }
     }
   }
 }
