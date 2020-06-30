@@ -21,6 +21,25 @@ class DrumKit {
     activeBars.forEach((bar) => {
       // loop over each pad
       bar.style.animation = `playTrack 0.3s alternate ease-in-out 2`;
+      // CHeck if pads are active
+      if (bar.classList.contains("active")) {
+        // Check each sound
+        if (bar.classList.contains("kickpad")) {
+          this.kickAudio.play();
+        }
+        if (bar.classList.contains("snarepad")) {
+          this.snareAudio.play();
+        }
+        if (bar.classList.contains("hihatpad")) {
+          this.hihatAudio.play();
+        }
+        if (bar.classList.contains("percpad")) {
+          this.percAudio.play();
+        }
+        if (bar.classList.contains("shakerpad")) {
+          this.shakerAudio.play();
+        }
+      }
     });
     this.index++;
   }
