@@ -125,8 +125,8 @@ svg {
   background: #ff495c;
 }
 
-.app__sequencer--kickTrack .app__sequencer--kickPads .kickpad--active {
-  background: #d41c2f;
+.app__sequencer--kickTrack .app__sequencer--kickPads .active {
+  background: #9b0f1d;
 }
 
 .app__sequencer--snareTrack {
@@ -142,11 +142,11 @@ svg {
 }
 
 .app__sequencer--snareTrack .app__sequencer--snarePads .snarepad {
-  background: #50c9ce;
+  background: #51d2d6;
 }
 
-.app__sequencer--snareTrack .app__sequencer--snarePads .snarepad--active {
-  background: #1ce1e7;
+.app__sequencer--snareTrack .app__sequencer--snarePads .active {
+  background: #065255;
 }
 
 .app__sequencer--hihatTrack {
@@ -165,8 +165,8 @@ svg {
   background: #d1f0b1;
 }
 
-.app__sequencer--hihatTrack .app__sequencer--hihatPads .hihatpad--active {
-  background: #a7e06e;
+.app__sequencer--hihatTrack .app__sequencer--hihatPads .active {
+  background: #6ca038;
 }
 
 .app__sequencer--percTrack {
@@ -182,11 +182,11 @@ svg {
 }
 
 .app__sequencer--percTrack .app__sequencer--percPads .percpad {
-  background: #ffc8fb;
+  background: #f5a7f1;
 }
 
-.app__sequencer--percTrack .app__sequencer--percPads--active {
-  background: #ff87f7;
+.app__sequencer--percTrack .app__sequencer--percPads .active {
+  background: #d835cd;
 }
 
 .app__sequencer--shakerTrack {
@@ -205,8 +205,8 @@ svg {
   background: #ead2ac;
 }
 
-.app__sequencer--shakerTrack .app__sequencer--shakerPads--active {
-  background: #f3ca89;
+.app__sequencer--shakerTrack .app__sequencer--shakerPads .active {
+  background: #ebab46;
 }
 
 .app__playBtn {

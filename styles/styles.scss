@@ -81,10 +81,9 @@ svg {
 
         .kickpad {
           background: #ff495c;
-
-          &--active {
-            background: #d41c2f;
-          }
+        }
+        .active {
+          background: #9b0f1d;
         }
       }
     }
@@ -96,11 +95,10 @@ svg {
         display: flex;
 
         .snarepad {
-          background: #50c9ce;
-
-          &--active {
-            background: #1ce1e7;
-          }
+          background: #51d2d6;
+        }
+        .active {
+          background: #065255;
         }
       }
     }
@@ -113,10 +111,9 @@ svg {
 
         .hihatpad {
           background: #d1f0b1;
-
-          &--active {
-            background: #a7e06e;
-          }
+        }
+        .active {
+          background: #6ca038;
         }
       }
     }
@@ -128,11 +125,10 @@ svg {
         display: flex;
 
         .percpad {
-          background: #ffc8fb;
+          background: #f5a7f1;
         }
-
-        &--active {
-          background: #ff87f7;
+        .active {
+          background: #d835cd;
         }
       }
     }
@@ -146,9 +142,8 @@ svg {
         .shakerpad {
           background: #ead2ac;
         }
-
-        &--active {
-          background: #f3ca89;
+        .active {
+          background: #ebab46;
         }
       }
     }
