@@ -28,7 +28,8 @@ svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#0f0c29), color-stop(#302b63), to(#24243e));
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 .app__sequencer {
@@ -55,6 +56,8 @@ svg {
   margin: 1rem 0.5rem;
   cursor: pointer;
   border-radius: 0.4rem;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .app__sequencer .track {
@@ -69,6 +72,7 @@ svg {
           justify-content: space-between;
   margin-top: 5rem;
   min-width: 100%;
+  color: white;
 }
 
 .app__sequencer .track .app__sequencer--controls {
@@ -86,10 +90,29 @@ svg {
           flex: 0.8;
 }
 
+.app__sequencer .track .app__sequencer--controls h1 {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
 .app__sequencer .track .app__sequencer--controls button {
   padding: 1rem;
   border: none;
   background: #536271;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.app__sequencer .track .app__sequencer--controls select {
+  padding: 1rem;
+  font-size: 1rem;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
 }
 
 .app__sequencer--kickTrack .app__sequencer--kickPads {
@@ -100,6 +123,10 @@ svg {
 
 .app__sequencer--kickTrack .app__sequencer--kickPads .kickpad {
   background: #ff495c;
+}
+
+.app__sequencer--kickTrack .app__sequencer--kickPads .kickpad--active {
+  background: #d41c2f;
 }
 
 .app__sequencer--snareTrack {
@@ -118,6 +145,10 @@ svg {
   background: #50c9ce;
 }
 
+.app__sequencer--snareTrack .app__sequencer--snarePads .snarepad--active {
+  background: #1ce1e7;
+}
+
 .app__sequencer--hihatTrack {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,6 +163,10 @@ svg {
 
 .app__sequencer--hihatTrack .app__sequencer--hihatPads .hihatpad {
   background: #d1f0b1;
+}
+
+.app__sequencer--hihatTrack .app__sequencer--hihatPads .hihatpad--active {
+  background: #a7e06e;
 }
 
 .app__sequencer--percTrack {
@@ -150,6 +185,10 @@ svg {
   background: #ffc8fb;
 }
 
+.app__sequencer--percTrack .app__sequencer--percPads--active {
+  background: #ff87f7;
+}
+
 .app__sequencer--shakerTrack {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,5 +203,19 @@ svg {
 
 .app__sequencer--shakerTrack .app__sequencer--shakerPads .shakerpad {
   background: #ead2ac;
+}
+
+.app__sequencer--shakerTrack .app__sequencer--shakerPads--active {
+  background: #f3ca89;
+}
+
+.app__playBtn {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  background: #536271;
+  color: white;
+  cursor: pointer;
+  margin: 4rem;
 }
 /*# sourceMappingURL=styles.css.map */
