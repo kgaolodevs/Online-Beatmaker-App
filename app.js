@@ -18,7 +18,10 @@ class DrumKit {
   repeat() {
     let step = this.index % 8; //when step's value equals to 8, it will reset to 0
     let activeBars = document.querySelectorAll(`.beat${step}`);
-    console.log(activeBars);
+    activeBars.forEach((bar) => {
+      // loop over each pad
+      bar.style.animation = `playTrack 0.3s alternate ease-in-out 2`;
+    });
     this.index++;
   }
 
@@ -34,10 +37,13 @@ class DrumKit {
 const drumKit = new DrumKit();
 
 // Event Listeners
-drumKit.playButton.addEventListener("click", () => {
+drumKit.playButton.addEventListener("click", function () {
   drumKit.start();
 });
 
 drumKit.pads.forEach((pad) => {
   pad.addEventListener("click", drumKit.activePad);
+  pad.addEventListener("animationend", function () {
+    this.style.animation = "";
+  });
 });
