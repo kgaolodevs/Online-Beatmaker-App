@@ -86,6 +86,12 @@ svg {
           flex: 0.8;
 }
 
+.app__sequencer .track .app__sequencer--controls button {
+  padding: 1rem;
+  border: none;
+  background: #536271;
+}
+
 .app__sequencer--kickTrack .app__sequencer--kickPads {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,7 +99,7 @@ svg {
 }
 
 .app__sequencer--kickTrack .app__sequencer--kickPads .kickpad {
-  background: #344055;
+  background: #ff495c;
 }
 
 .app__sequencer--snareTrack {
@@ -125,7 +131,7 @@ svg {
 }
 
 .app__sequencer--hihatTrack .app__sequencer--hihatPads .hihatpad {
-  background: #72a1e5;
+  background: #d1f0b1;
 }
 
 .app__sequencer--percTrack {

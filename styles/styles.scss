@@ -49,6 +49,12 @@ svg {
         justify-content: space-between;
         align-items: center;
         flex: 0.8;
+
+        button {
+          padding: 1rem;
+          border: none;
+          background: #536271;
+        }
       }
     }
 
@@ -57,7 +63,7 @@ svg {
         display: flex;
 
         .kickpad {
-          background: #344055;
+          background: #ff495c;
         }
       }
     }
@@ -81,7 +87,7 @@ svg {
         display: flex;
 
         .hihatpad {
-          background: #72a1e5;
+          background: #d1f0b1;
         }
       }
     }
