@@ -1,1 +1,43 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.app .pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+}
+
+.app__sequencer--kickPad .kickpad {
+  background: #344055;
+}
+
+.app__sequencer--snarePad .snarepad {
+  background: #50c9ce;
+}
+
+.app__sequencer--hihatPad .hihatpad {
+  background: #72a1e5;
+}
+
+.app__sequencer--percPad .percpad {
+  background: #ffc8fb;
+}
+
+.app__sequencer--shakerPad .shakerpad {
+  background: #ead2ac;
+}
+/*# sourceMappingURL=styles.css.map */
