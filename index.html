@@ -10,16 +10,165 @@
   </head>
   <body>
     <section class="app">
-      <div class="app__sequencer">
+      <section class="app__sequencer">
         <div class="app__sequencer--kickTrack">
           <div class="app__sequencer--controls">
             <h1>Kick</h1>
             <button data-track="0" class="mute kick-volume">
               <i class="fas fa-volume-mute"></i>
             </button>
+            <select name="kick-select" id="kick-select">
+              <option value="./allSounds/kick-heavy.wav">Heavy Kick</option>
+              <option value="./allSounds/kick-plain.wav">Plain Kick</option>
+              <option value="./allSounds/kick-808.wav">808 Kick</option>
+              <option value="./allSounds/kick-deep.wav">Deep Kick</option>
+              <option value="./allSounds/kick-oldschool.wav"
+                >Old School Kick</option
+              >
+              <option value="./allSounds/kick-newwave.wav"
+                >New Wave Kick</option
+              >
+            </select>
+          </div>
+
+          <div class="app__sequencer--kickPad">
+            <div class="pad kickpad beat0"></div>
+            <div class="pad kickpad beat1"></div>
+            <div class="pad kickpad beat2"></div>
+            <div class="pad kickpad beat3"></div>
+            <div class="pad kickpad beat4"></div>
+            <div class="pad kickpad beat5"></div>
+            <div class="pad kickpad beat6"></div>
+            <div class="pad kickpad beat7"></div>
           </div>
         </div>
-      </div>
+
+        <div class="app__sequencer--snareTrack">
+          <div class="app__sequencer--controls">
+            <h1>Snare</h1>
+            <button data-track="1" class="mute snare-volume">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+            <select name="snare-select" id="snare-select">
+              <option value="./allSounds/snare-analog.wav">Heavy analog</option>
+              <option value="./allSounds/snare-big.wav">Big snare</option>
+              <option value="./allSounds/snare-808.wav">808 snare</option>
+              <option value="./allSounds/snare-acoustic01.wav"
+                >Acoustic snare</option
+              >
+              <option value="./allSounds/snare-lofi01.wav">Lofi snare</option>
+              <option value="./allSounds/snare-dist01.wav"
+                >Distorted snare</option
+              >
+            </select>
+          </div>
+
+          <div class="app__sequencer--snarePad">
+            <div class="pad snarepad beat0"></div>
+            <div class="pad snarepad beat1"></div>
+            <div class="pad snarepad beat2"></div>
+            <div class="pad snarepad beat3"></div>
+            <div class="pad snarepad beat4"></div>
+            <div class="pad snarepad beat5"></div>
+            <div class="pad snarepad beat6"></div>
+            <div class="pad snarepad beat7"></div>
+          </div>
+        </div>
+
+        <div class="app__sequencer--hihatTrack">
+          <div class="app__sequencer--controls">
+            <h1>Hihat</h1>
+            <button data-track="1" class="mute hihat-volume">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+            <select name="hihat-select" id="hihat-select">
+              <option value="./allSounds/hihat-analog.wav">Analog hihat</option>
+              <option value="./allSounds/hihat-digital.wav"
+                >Digital hihat</option
+              >
+              <option value="./allSounds/hihat-808.wav">808 hihat</option>
+              <option value="./allSounds/hihat-acoustic01.wav"
+                >Acoustic hihat</option
+              >
+              <option value="./allSounds/hihat-ring.wav">Ring hihat</option>
+              <option value="./allSounds/hihat-dist01.wav"
+                >Distorted hihat</option
+              >
+            </select>
+          </div>
+
+          <div class="app__sequencer--hihatPad">
+            <div class="pad hihatpad beat0"></div>
+            <div class="pad hihatpad beat1"></div>
+            <div class="pad hihatpad beat2"></div>
+            <div class="pad hihatpad beat3"></div>
+            <div class="pad hihatpad beat4"></div>
+            <div class="pad hihatpad beat5"></div>
+            <div class="pad hihatpad beat6"></div>
+            <div class="pad hihatpad beat7"></div>
+          </div>
+        </div>
+
+        <div class="app__sequencer--percTrack">
+          <div class="app__sequencer--controls">
+            <h1>Perc</h1>
+            <button data-track="1" class="mute perc-volume">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+            <select name="perc-select" id="perc-select">
+              <option value="./allSounds/perc-analog.wav">Chirpy perc</option>
+              <option value="./allSounds/perc-chirpy.wav">Digital perc</option>
+              <option value="./allSounds/perc-808.wav">808 perc</option>
+              <option value="./allSounds/perc-metal.wav">Metallic perc</option>
+              <option value="./allSounds/perc-hollow.wav">Hollow perc</option>
+              <option value="./allSounds/perc-tribal.wav">Tribal perc</option>
+              <option value="./allSounds/perc-laser.wav">Laser perc</option>
+            </select>
+          </div>
+
+          <div class="app__sequencer--percPad">
+            <div class="pad percpad beat0"></div>
+            <div class="pad percpad beat1"></div>
+            <div class="pad percpad beat2"></div>
+            <div class="pad percpad beat3"></div>
+            <div class="pad percpad beat4"></div>
+            <div class="pad percpad beat5"></div>
+            <div class="pad percpad beat6"></div>
+            <div class="pad percpad beat7"></div>
+          </div>
+        </div>
+
+        <div class="app__sequencer--shakerTrack">
+          <div class="app__sequencer--controls">
+            <h1>Shaker</h1>
+            <button data-track="1" class="mute shaker-volume">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+            <select name="shaker-select" id="shaker-select">
+              <option value="./allSounds/shaker-analog.wav"
+                >Analog shaker</option
+              >
+              <option value="./allSounds/shaker-shuffle.wav"
+                >Shuffle shaker</option
+              >
+              <option value="./allSounds/shaker-suckup.wav"
+                >Suckup shaker</option
+              >
+            </select>
+          </div>
+
+          <div class="app__sequencer--shakerPad">
+            <div class="pad shakerpad beat0"></div>
+            <div class="pad shakerpad beat1"></div>
+            <div class="pad shakerpad beat2"></div>
+            <div class="pad shakerpad beat3"></div>
+            <div class="pad shakerpad beat4"></div>
+            <div class="pad shakerpad beat5"></div>
+            <div class="pad shakerpad beat6"></div>
+            <div class="pad shakerpad beat7"></div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <script
