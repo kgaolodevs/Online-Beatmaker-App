@@ -82,9 +82,10 @@ class DrumKit {
   changeSound(e) {
     const selectionName = e.target.name;
     const selectionValue = e.target.value;
-    switch (selectionValue) {
+    switch (selectionName) {
       case "kick-select":
         this.kickAudio.src = selectionValue;
+        console.log(this.kickAudio.src);
         break;
 
       case "snare-select":
