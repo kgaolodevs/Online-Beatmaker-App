@@ -18,8 +18,10 @@ class DrumKit {
     this.shakerAudio = document.querySelector(".app__shakerSound");
 
     this.playButton = document.querySelector(".app__playBtn");
-
     this.allSelects = document.querySelectorAll("select");
+    this.controlSections = document.querySelectorAll(
+      ".app__sequencer--controls"
+    );
 
     this.index = 0;
     this.bpm = 140;
@@ -105,6 +107,38 @@ class DrumKit {
         break;
     }
   }
+
+  muteSound(e) {
+    const control = e.target.classList;
+
+    /*
+    if (control.contains("kick-volume")) {
+      console.log("Kick Muted");
+    }
+    */
+
+    switch (control[1]) {
+      case "kick-volume":
+        console.log("Kick Muted");
+        break;
+
+      case "snare-volume":
+        console.log("snare Muted");
+        break;
+
+      case "hihat-volume":
+        console.log("hihat Muted");
+        break;
+
+      case "perc-volume":
+        console.log("perc Muted");
+        break;
+
+      case "shaker-volume":
+        console.log("shaker Muted");
+        break;
+    }
+  }
 }
 
 // Objects
@@ -125,5 +159,11 @@ drumKit.pads.forEach((pad) => {
 drumKit.allSelects.forEach((select) => {
   select.addEventListener("change", function (e) {
     drumKit.changeSound(e);
+  });
+});
+
+drumKit.controlSections.forEach((controlSection) => {
+  controlSection.addEventListener("click", function (e) {
+    drumKit.muteSound(e);
   });
 });
