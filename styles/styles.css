@@ -107,6 +107,10 @@ svg {
   transition: all ease 0.5s;
 }
 
+.app__sequencer .track .app__sequencer--controls .muteActive {
+  background-color: #53627138;
+}
+
 .app__sequencer .track .app__sequencer--controls select {
   padding: 1rem;
   font-size: 1rem;
