@@ -20,6 +20,7 @@ class DrumKit {
     this.playButton = document.querySelector(".app__playBtn");
     this.allSelects = document.querySelectorAll("select");
     this.muteButtons = document.querySelectorAll(".mute");
+    this.tempoSlider = document.querySelector(".app__tempo--slider");
 
     this.index = 0;
     this.bpm = 140;
