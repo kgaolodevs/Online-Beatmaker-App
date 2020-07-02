@@ -223,6 +223,31 @@ svg {
   margin: 4rem;
 }
 
+.app__tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.app__tempo--slider {
+  padding: 0.1rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  position: relative;
+  background: -webkit-gradient(linear, right top, left top, from(#ffc13b), to(#ff2525));
+  background: linear-gradient(to left, #ffc13b, #ff2525);
+  cursor: pointer;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.app__tempo p {
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
 @-webkit-keyframes playTrack {
   from {
     -webkit-transform: scale(1);
