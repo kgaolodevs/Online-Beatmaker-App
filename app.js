@@ -72,10 +72,12 @@ class DrumKit {
       this.isPlaying = setInterval(() => {
         this.repeat();
       }, interval);
+      this.playButton.classList.add("active");
       this.playButton.textContent = "Pause";
     } else {
       clearInterval(this.isPlaying);
       this.isPlaying = null;
+      this.playButton.classList.remove("active");
       this.playButton.textContent = "Play";
     }
   }
@@ -156,6 +158,18 @@ class DrumKit {
       }
     }
   }
+
+  changeTempo(e) {
+    const tempoText = document.querySelector(".app__tempo--number");
+    this.bpm = e.target.value;
+    tempoText.textContent = e.target.value;
+  }
+
+  updateTempo(e) {
+    clearInterval(this.isPlaying);
+    this.isPlaying = null;
+    if (this.playButton.classList.contains("active")) this.start();
+  }
 }
 
 // Objects
@@ -183,4 +197,12 @@ drumKit.muteButtons.forEach((button) => {
   button.addEventListener("click", function (e) {
     drumKit.muteSound(e);
   });
+});
+
+drumKit.tempoSlider.addEventListener("input", function (e) {
+  drumKit.changeTempo(e);
+});
+
+drumKit.tempoSlider.addEventListener("change", function (e) {
+  drumKit.updateTempo(e);
 });
